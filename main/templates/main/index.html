@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="hero-part">
+        <div class="wrapper">
+            <div class="texts">
+                <h1>MiniMindz</h1>
+                <p>Reveal your kid's superpower from very young age</p>
+                <div class="button">
+                    <a href="learn-more">Try for free</a>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="{% static 'IMAGES/kid.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="info-block2">
+        <div class="wrapper">
+            <div class="video">
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/AjgD3CvWzS0" title="TuTiTu Compilation | Numbers &amp; Letters | Fun Learning Videos for Children" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="texts">
+                <h1>What we do?</h1>
+                <p>We teach languages in a unique way, which is called full immersion.
+                MiniMindz also helps kids to develop logic and math using special games.
+                In the platform, you can also find special games with topics, that enhance kids recognition of the surrounding world.</p>
+            </div>
+        </div>
+    </div>
+    <div class="info-block3">
+        <div class="wrapper">
+            <div class="texts">
+                <h1>How we do it?</h1>
+                <i>No more scrolling!</i>
+                <div class="points">
+                    <div class="spans">
+                        <li class="point1 chosen">Mobile addiction? That's also not a problem for us</li>
+                        <li class="point2">Our games won't hurt your kid</li>
+                        <li class="point3">Get access to your child's account</li>
+                    </div>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="{% static 'IMAGES/alligator.webp' %}" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block import %}
+<script src="{% static 'JS/button.js' %}"></script>
+{% endblock %}
